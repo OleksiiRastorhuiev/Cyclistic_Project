@@ -46,17 +46,17 @@ After creating a combined tripdata table, the total number of rows was 6,491,571
 After creating a new combined table, I ran querries in order to find outliers, errors, blank rows, missing values.
 The schema of table:
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/38f610cb-c4de-4966-8d0d-4583e2a875dc"
-width="217">
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/6996d496-103d-45fb-b8d6-06c4a26a91ba"
+width="217" >
 
 Total number of rows:
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/1d67f425-638d-4e13-8975-68bcefda5d26"
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/bc934436-f3ae-4d8e-a5c6-1abf6397939f"
 width="136" >
 
 Number of duplicates based on ride_id column:
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/390aa029-6b95-4c8d-83d5-7aa95e3a43f2"
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/7bd6e711-4684-4632-80e1-101fe252600f"
 width="125">
 
 
@@ -67,62 +67,62 @@ width="125">
 
 First, we create a table without duplicates in ride_id. Then we find the total number of rows:
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/724bbf00-b86d-4114-be7d-7680900834c4"
-  width="204">
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/c25678f6-6972-4532-82ca-74e662b9b16d"
+width="204">
 
 Check for duplicates:
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/8d324ca8-bb46-4364-91dd-c6d2321d2bed"
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/1dc74f6b-7453-4537-82c4-403241c88a0b"
 width="164">
 
 Total number of blank or null rows in columns:
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/9176d28b-fa3e-4d5d-82ff-2540712f58c7"
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/aa973a48-4895-4480-9ce0-7865c991aa32"
 width="156">
 
 Distribution of the number of blank values between columns:
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/c4894258-e260-4a02-9189-547d801e5d45"
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/32846ef5-4716-417a-8fd0-3d30f1d3121f"
 width="246">
 
 Delete blank values from affected columns:
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/927746f0-46f5-4c81-a47b-455ac7bf63a9"
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/21b161e5-e298-4328-8542-f5e5c70f30d5"
 width="141">
-
 
 Total number of rows returned after cleanup:
  
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/432038ca-ff5d-4d22-acf0-cc0756750ceb"
-width="170" >
- 
+
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/8251530a-e7ce-4461-ab1b-f7a102d9cdbb"
+width="170">
+
 This means that 2,159,867 rows of "bad data" have been removed. 
 Outliers are removed after inserting a travel time column.
 After adding new columns, let's find the number of outliers: trip duration less <= 0 minutes and >= 24 hours.
 
 Number of negative values and 0:
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/e8b41f46-5e87-4b24-8c81-8cbd5400c002"
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/32f3a370-933d-4635-937a-4b39c886c351"
 width="215" >
 
 Number of trips greater than or equal to 24 hours (1440 minutes):
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/4e840bd7-7715-4c7e-929e-e0ba06d14738"
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/d45299e0-a19f-435f-882c-f520b4001ad1"
 width="138">
 
 Delete null and negative values in the Duration column:
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/716380f7-cd26-44b8-815a-78f0be2ecde2"
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/e324e9d4-4d95-4def-9972-23971dcfe2e4"
 width="128">
 
 Deletion of rides equal to or longer than 24 hours:
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/be967a22-2185-450b-8a25-aef250016245"
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/c77db241-7e1f-4800-bc45-f90cc98879f8"
 width="116">
 
 Check to see if Outliers are deleted:
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/f745f9cb-4d77-4585-84a1-4e17b454800d"
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/4f3e7fd1-0a5e-446d-849e-3fd566f4ddd5"
 width="346">
 
 
@@ -133,86 +133,86 @@ Answer to question 1
 
 Total number of trips by user type in 2023:
 
-<img  alt="20_number_rides_usertype" src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/73058dbd-ecd7-4489-b30d-e07a6e11ec3d"
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/5fa17e22-a8c5-4ef9-be71-0cab6c0a4218"
 width="258">
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/1aeb187c-c55f-4005-89f4-383107f322b7"
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/1668aaf5-89d4-4b9c-a7de-47c57686f9b1"
 width="200">
 
 It can be seen that the share of casual users is larger than that of members. Therefore, understanding the differences between the two groups is crucial for a successful marketing campaign.
 
 Preferred bike type among users:
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/e28369ec-bfe4-439c-a44c-568c07099621"
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/3e6c6d11-476e-4957-96b2-7eb27562efba"
 width="333">
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/b36899b1-b7e7-431f-98e5-930525ef2626"
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/ec52faa8-0890-47a4-a431-509f6b082dcd"
 width="219">
 
 The classic bicycle is an absolute favorite among members and casual riders. Electric bicycles were less preferred by both groups. Although docked bikes were ridden by casual riders (especially during the summer), their share was small.
 
 Average ride time for members and occasional riders:
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/7deb5be3-d8af-4a72-9d8e-94afd37b185f"
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/2fbc4d20-15ff-4dbe-afa9-5e365e5ddf9a"
 width="191">
 
 Average trip duration was 12 minutes for members and 23 minutes for occasional riders. Apparently, this can be explained by the higher magnitude of ride duration for casual riders.
 
 Distribution of average trip duration by month and user:
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/2dbec493-d240-4f59-9465-dfbe709b4143"
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/223de844-9751-4d41-b270-1b745cf34ff8"
 width="338">
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/d49e33d2-910a-4685-9d08-7e0744e9278e"
-width="292" >
+<img alt="17_month_avg_duration_by_user" src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/29b8c931-381a-4f86-9c53-271573fcf334"
+width="292">
 
 It seems that the average ride duration for member users tends to be more stable, while this value is higher for casual riders (perhaps due to seasonality).
 
 Number of rides by month and user type:
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/4e932b9b-9ae9-4f1d-8060-1274780acc25"
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/b1c16b59-8b5d-442f-a967-ba40a5f3aa4b"
 width="429">
 
 For both types of riders, the number of trips increases in the summer. This can be explained by seasonality (longer day length, temperature, better weather).
 
 Number of rides by day of week and user type:
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/e2e4eed4-6b56-49d9-9fd9-707718ef702f"
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/5fcec6a3-d620-4784-ad88-23f8ac74e612"
 width="429">
 
 The distribution of number of rides differs for member and casual users. In general, member riders had a more even distribution of rides, and casual riders had more obvious peaks. The beginning of the week was busier for member riders. Casual riders tended to ride more on the weekend. This could be explained by the different priorities of member and casual users: members could rent a bike for work, while casual users would use it for vacation or hobby.
 
 Number of rides by hour and user type:
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/0d2bbd68-a3d8-40d3-a047-e2069626ea2e"
-width="429">
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/1c558a5f-4c3a-442e-bf72-370931b956a8"
+width="319">
 
 It can be seen that the busiest times (peaks) for member riders were 8 o'clock and 5 o'clock. The explanation for this could be that member users rent a bike to get to work. For casual riders, there weren't any "busy" hours - renting time was more evenly distributed among users without annual memberships. 
  
 Top 10 start station names for members:
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/656f5ccd-2750-4309-8869-418700cf20ec"
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/9a11631a-297f-425f-9b51-0e6a818e310c"
 width="429">
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/2db06e90-1383-438f-ad3f-48af728d1d2f"
+<img alt="18_top10_stations_member" src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/968ff938-eb7c-4ae5-8b2e-aad4c9c32fff"
 width="348">
 
 Top 10 places to start for casual riders:
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/a225be68-68a3-44c3-9ad9-a491c77bd4a7"
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/e4d8f3dd-cf2c-432e-a7c7-6d481b7d56a0"
 width="429">
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/82395c7f-157b-4d56-9d61-9e0e0da7743d"
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/dcd29983-55c0-443c-aa9b-02baaacdc45a"
 width="348">
 
 Dashboard:
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/e1d11404-d382-4a64-a6af-e37f2a85ffcd"
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/650883cc-3799-481f-bb17-187f8f0eab28"
 width="999">
 
 Top 10 Start and End Stations for Members and Casuals:
 
-<img src="https://github.com/OleksiiRastorhuiev/Cyclist_project/assets/162378596/f88c12c2-927a-4f17-8436-0c7cd32fdb08"
+<img src="https://github.com/OleksiiRastorhuiev/Cyclistic_Project/assets/162378596/94e1b968-e0f6-4a56-9080-7c598b5c7764"
 width="999">
 
 ## 5. Act
@@ -228,7 +228,7 @@ width="999">
   * Docked bicycle was rented only by casual riders, but the share was minor.
 
 * Ride Frequency:
-  * **by month:** For both groups the busiest time was in summer (especially in August) with the second peak in September and the third increase in May. During the other months, the number of trips tended to decrease, with the lowest value in February.       It seems that the higher demand for bicycle trips for both types of users in summer could be explained by the holiday season, better weather and longer day length. The decline from mid-fall to late winter could be due to poorer weather conditions and shorter days.
+  * **by month:** For both groups the busiest time was in summer (especially in August) with the second peak in September and the third increase in May. During the other months, the number of trips tended to decrease, with the lowest value in February. It seems that the higher demand for bicycle trips for both types of users in summer could be explained by the holiday season, better weather and longer day length. The decline from mid-fall to late winter could be due to poorer weather conditions and shorter days.
   * **by day of week:** For members, Wednesday, Thursday and Tuesday were the busiest days, and Sunday was the least busy.
     for casual users: Saturday, Sunday and Friday are the busiest days for casual users. The beginning of the week was the least busy.
   * **by hour:** The highest numbers of member riders were at 8 o'clock and 5 o'clock. This could be explained by the fact that members rent a bike to get to work. For casual riders, there weren't any "busy" hours - renting time was more evenly distributed among non-members.
