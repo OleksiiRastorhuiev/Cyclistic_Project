@@ -35,7 +35,7 @@ This is a public data that can be used to explore how different a customer type 
   * Python (for 6 months period of 2023)
 
 Different tools for data analysis make it possible to present insights in the most appropriate way for the audience. 
-This README focuses on the MYSQL and Power BI tool. Please click [here](Python_ScriptCyclistic.ipynb) to see this project performed in Python.
+This README focuses on the MYSQL and Power BI tool. Please click [here](Python_Script_Cyclistic.ipynb) to see this project performed in Python.
 
 ## 3. Process
 **Data combining**
